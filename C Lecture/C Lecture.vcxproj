@@ -139,7 +139,14 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="C Lecture.c" />
+    <ClCompile Include="C Lecture 1일차%28자료형, 서식,변수%29.c" />
+    <ClCompile Include="C Lecture 2일차%28입출력, 서식문자%29.c" />
+    <ClCompile Include="C Lecture 3일차%28자료형, 연산자%29.c" />
+    <ClCompile Include="C Lecture 4일차%28연산자, 조건%29.c" />
+    <ClCompile Include="C Lecture 5일차%28switch, case, 반복%29.c" />
+    <ClCompile Include="C Lecture 6일차%28반복%29.c" />
+    <ClCompile Include="C Lecture 7일차%28배열, 재귀%29.c" />
+    <ClCompile Include="C Lecture 8일차%28포인터,다차원 배열%29.c" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
