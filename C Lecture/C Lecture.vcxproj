@@ -147,6 +147,7 @@
     <ClCompile Include="C Lecture 6일차%28반복%29.c" />
     <ClCompile Include="C Lecture 7일차%28배열, 재귀%29.c" />
     <ClCompile Include="C Lecture 8일차%28포인터,다차원 배열%29.c" />
+    <ClCompile Include="C Lecture 9일차(포인터).c" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
