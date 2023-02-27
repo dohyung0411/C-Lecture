@@ -141,6 +141,7 @@
   <ItemGroup>
     <ClCompile Include="C Lecture 10일차 (포인터).c" />
     <ClCompile Include="C Lecture 11일차 (포인터).c" />
+    <ClCompile Include="C Lecture 12일차 (다차원 포인터).c" />
     <ClCompile Include="C Lecture 1일차%28자료형, 서식,변수%29.c" />
     <ClCompile Include="C Lecture 2일차%28입출력, 서식문자%29.c" />
     <ClCompile Include="C Lecture 3일차%28자료형, 연산자%29.c" />
