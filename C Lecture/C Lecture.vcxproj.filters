@@ -51,5 +51,8 @@
     <ClCompile Include="C Lecture 12일차 (다차원 포인터).c">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="C Lecture 13일차 (구조체).c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

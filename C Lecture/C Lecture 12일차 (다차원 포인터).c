@@ -262,3 +262,81 @@ void main()
 //
 //    free(p);
 //}
+
+
+// ******중요한 문제 다시 한번 보기
+
+/*
+#include<stdio.h>
+#include<malloc.h>
+void doMalloc(int** pp)
+{
+   *pp = (int*)malloc(sizeof(int) * 2);
+   if (*pp == NULL)
+   {
+      printf("Eerr!");
+   }
+
+   **pp = 7;
+
+}
+void main()
+{
+   int* p = NULL;
+
+   doMalloc(&p);
+
+   printf("*p = %d\n", *p);
+
+   free(p);
+}
+*/
+
+/*
+    ㅁ 2차원 포인터와 2차원 배열
+       ㅇ 여러 개의 1차원 포인터를 정적으로 할당하기
+       {
+         short* p[100]; // short* 형식의 1차원 포인터를 100개 선언
+       }
+           - 배열의 요소가 100개, 각 요소의 크기는 4Byte
+           - 할당된 전체 메모리 크기는 400byte
+           - p[0]~ p[99] 까지 총 100개의 포인터 사용 가능
+
+       ㅇ 배열 포인터 표현의 비효율성
+          - 배열을 사용하여p변수의 크기가 400Byte로 고정됨.
+          - 100개의 포인터를 모두 사용하지 않는다면 메모리가 낭비됨.
+
+
+*/
+
+/*
+#include<stdio.h>
+#include<malloc.h>
+void main()
+{
+   short** pp ;
+   int nInput = 0;
+   printf("nInput?");
+   scanf_s("%d", &nInput);
+
+
+   pp = (int**)malloc(sizeof(int) * nInput);
+
+   printf("[pp]malloc success addr = [%p], _msize() = %d\n ", pp, _msize(pp));
+
+
+}
+*/
+
+
+/*
+#include<stdio.h>
+void main()
+{
+   char temp[4] = { 0x1, 0x2, 0x3, 0x4 };
+   char* p = temp;
+
+   *(short*)p++ = 0x1234;
+   printf("%x", *p);
+}
+*/
